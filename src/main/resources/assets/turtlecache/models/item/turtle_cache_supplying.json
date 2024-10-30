@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "turtlecache:item/turtle_cache_supplying"
+  }
+}

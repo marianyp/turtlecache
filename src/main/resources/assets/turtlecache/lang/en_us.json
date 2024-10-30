@@ -1,0 +1,5 @@
+{
+  "item.turtlecache.turtle_cache": "Turtle Cache",
+  "item.turtlecache.turtle_cache.supplying": "Turtle Cache [Supplying]",
+  "item.turtlecache.turtle_cache.fullness": "Contains: %d / %d %d"
+}

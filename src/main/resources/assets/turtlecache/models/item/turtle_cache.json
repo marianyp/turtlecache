@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "turtlecache:item/turtle_cache"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "turtlecache:supplying": 1
+      },
+      "model": "turtlecache:item/turtle_cache_supplying"
+    }
+  ]
+}

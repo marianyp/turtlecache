@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "c:chests/wooden"
+    },
+    "S": {
+      "item": "minecraft:turtle_scute"
+    }
+  },
+  "pattern": [
+    "S",
+    "C",
+    "S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "turtlecache:turtle_cache"
+  }
+}
