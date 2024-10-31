@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.type.ContainerComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 
@@ -26,7 +27,7 @@ public class ModItems {
         TurtleCache.LOGGER.info("Registering Mod Items for " + TurtleCache.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
-            entries.add(TURTLE_CACHE);
+            entries.addAfter(Items.LEAD, TURTLE_CACHE);
         });
     }
 }

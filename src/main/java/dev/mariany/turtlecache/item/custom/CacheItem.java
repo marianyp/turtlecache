@@ -116,14 +116,12 @@ public class CacheItem extends Item {
             return TypedActionResult.pass(cacheStack);
         }
 
-        if (isSupplyEnabled(cacheStack)) {
-            if (dropContents(cacheStack, user)) {
-                this.playDropContentsSound(user);
-                if (user instanceof ServerPlayerEntity serverPlayer) {
-                    serverPlayer.incrementStat(Stats.USED.getOrCreateStat(this));
-                }
-                return TypedActionResult.success(cacheStack, world.isClient);
+        if (dropContents(cacheStack, user)) {
+            this.playDropContentsSound(user);
+            if (user instanceof ServerPlayerEntity serverPlayer) {
+                serverPlayer.incrementStat(Stats.USED.getOrCreateStat(this));
             }
+            return TypedActionResult.success(cacheStack, world.isClient);
         }
 
         return TypedActionResult.fail(cacheStack);
